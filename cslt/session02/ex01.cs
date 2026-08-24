@@ -6,7 +6,7 @@ namespace cslt.session02
 {
     internal class ex01
     {
-        public static void Main(String[] args)
+        public static void Main1(String[] args)
         {
             // 1. To Add/ Sum two numbers
             Console.WriteLine("To Add / Sum two numbers");
