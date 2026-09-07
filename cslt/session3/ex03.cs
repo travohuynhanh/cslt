@@ -276,7 +276,7 @@ namespace cslt.session3
             Console.WriteLine($"Xếp loại học lực: {xepLoai}");
         }
 
-        public static void Main(string[] args)
+        public static void Main3(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
             Bai01slide();
