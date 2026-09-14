@@ -122,7 +122,7 @@ namespace cslt.session5
                 Console.WriteLine();
             }
         }
-            static void Main( String[] args )
+            static void Main5( String[] args )
         {
             Bai1lms();
             Bai2lms();
