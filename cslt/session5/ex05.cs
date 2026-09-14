@@ -62,11 +62,75 @@ namespace cslt.session5
             else
             { Console.WriteLine($"So {so} khong la so hoan hao"); }
         }
-        static void Main( String[] args )
+        static void Bai8lms()
+        {
+            int n = int.Parse(Console.ReadLine());
+            bool isPrime = true;
+            if (n < 2)
+            {
+                isPrime = false;
+            }
+            else
+            {
+                for (int i = 2; i <= Math.Sqrt(n); i++)
+                {
+                    if (n % i == 0)
+                    {
+                        isPrime = false;
+                        break;
+                    }
+                }
+            }
+            if (isPrime)
+            {
+                Console.WriteLine($"{n} la so nguyen to.");
+            }
+            else
+            {
+                Console.WriteLine($"{n} khong phai la so nguyen to.");
+            }
+        }
+        static void Bai4lms()
+        {
+            int n = int.Parse(Console.ReadLine());
+            for (int i = 1; i <= n; i++)
+            {
+                for (int j = 1; j <= i; j++)
+                {
+                    Console.Write(j + " ");
+                }
+                Console.WriteLine();
+            }
+        }
+        static void Bai5lms()
+        {
+            int n = int.Parse(Console.ReadLine());
+            for (int i = 1; i <= n; i++)
+            {
+                for (int j = 1; j <= i; j++)
+                {
+                    Console.Write(j + " ");
+                }
+                Console.WriteLine();
+            }
+            for (int i = n - 1; i >= 1; i--)
+            {
+                for (int j = 1; j <= i; j++)
+                {
+                    Console.Write(j + " ");
+                }
+                Console.WriteLine();
+            }
+        }
+            static void Main( String[] args )
         {
             Bai1lms();
             Bai2lms();
             Bai3lms();
+            Bai4lms();
+            Bai5lms();
+            Bai7lms();
+            Bai8lms();
         }
 
     }
